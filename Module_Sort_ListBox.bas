@@ -24,7 +24,7 @@ Function SortListBox(ListBoxName As MSForms.ListBox, Ascendent As Boolean, Optio
     Separator = "___"
     
 ''' Errors are discarded
-    If CountItems < 0 Then Exit Function
+    If CountItems = 0 Then Exit Function
     If SortByColumn > CountColumns - 1 Then SortByColumn = CountColumns - 1
     
 ''' Create Array
