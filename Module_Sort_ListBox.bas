@@ -56,7 +56,10 @@ Function SortListBox(ListBoxName As MSForms.ListBox, Ascendent As Boolean, Optio
             ListBoxName.List(i, n - 1) = ListBoxReturn(n)
         Next n
     Next i
-
+    
+''' Array content is erased to free up memory space
+    Erase ListBoxArray
+    Erase ListBoxReturn
 End Function
 
 
